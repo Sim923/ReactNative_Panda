@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Panda</string>
+    <string name="freshchat_file_provider_authority">app.successpanda.successpanda</string>
+    <string name="default_notification_channel_id">default-channel</string>
+</resources>

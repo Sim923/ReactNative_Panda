@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "978108856826",
+    "firebase_url": "https://panda-app-8cb4c.firebaseio.com",
+    "project_id": "panda-app-8cb4c",
+    "storage_bucket": "panda-app-8cb4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978108856826:android:57a988a74782a0ad",
+        "android_client_info": {
+          "package_name": "app.successpanda.successpanda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978108856826-o8sn9cbqqfap2j3ifmib83eo3jdu9rlq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCexFr7UuOsvyHs835ioIyXic2r4mP5Zf8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978108856826-o8sn9cbqqfap2j3ifmib83eo3jdu9rlq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

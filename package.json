@@ -1,0 +1,69 @@
+{
+  "name": "Panda",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@react-native-community/async-storage": "^1.2.2",
+    "@react-native-community/netinfo": "^2.0.10",
+    "i18n-js": "^3.2.1",
+    "lodash.memoize": "^4.1.2",
+    "moment": "^2.24.0",
+    "react": "16.8.3",
+    "react-native": "0.58.6",
+    "react-native-actionsheet": "^2.4.2",
+    "react-native-confetti-cannon": "^1.1.3",
+    "react-native-dialog-input": "^1.0.7",
+    "react-native-fast-image": "^5.2.0",
+    "react-native-firebase": "^5.4.2",
+    "react-native-flurry-analytics": "^3.0.3",
+    "react-native-freshchat-sdk": "^0.5.8",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-native-image-picker": "^0.28.1",
+    "react-native-image-progress": "^1.1.1",
+    "react-native-image-resizer": "^1.0.1",
+    "react-native-input-scroll-view": "^1.9.2",
+    "react-native-iphone-x-helper": "^1.2.1",
+    "react-native-keyboard-aware-scroll-view": "^0.8.0",
+    "react-native-linear-gradient": "^2.5.4",
+    "react-native-localize": "^1.1.1",
+    "react-native-modal-datetime-picker": "^7.4.2",
+    "react-native-progress": "^3.6.0",
+    "react-native-restart": "0.0.9",
+    "react-native-slider": "^0.11.0",
+    "react-native-sound": "^0.10.12",
+    "react-native-splash-screen": "^3.2.0",
+    "react-native-status-bar-height": "^2.3.1",
+    "react-native-swipe-list-view": "^1.5.3",
+    "react-native-ux-cam": "^5.0.1",
+    "react-navigation": "^3.6.0",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1",
+    "redux-saga": "^1.0.2",
+    "reduxsauce": "^1.0.1",
+    "reselect": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/runtime": "^7.4.2",
+    "@react-native-community/eslint-config": "^0.0.3",
+    "babel-jest": "^24.5.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "eslint": "^5.16.0",
+    "jest": "^24.5.0",
+    "metro-react-native-babel-preset": "^0.53.1",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "rnpm": {
+    "assets": [
+      "./src/assets/fonts/"
+    ]
+  }
+}

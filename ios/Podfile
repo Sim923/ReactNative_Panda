@@ -1,0 +1,63 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SuccessPanda' do
+  rn_path = '../node_modules/react-native'
+  rn_gradient_path = '../node_modules/react-native-linear-gradient'
+
+  pod 'yoga', path: "#{rn_path}/ReactCommon/yoga/yoga.podspec"
+  pod 'React', path: rn_path, subspecs: [
+    'Core',
+    'CxxBridge',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTLinkingIOS',
+    'RCTNetwork',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket',
+  ]
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  pod 'BVLinearGradient', :path => rn_gradient_path
+
+  pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
+
+  pod 'react-native-image-resizer', :path => '../node_modules/react-native-image-resizer'
+
+  pod 'RNLocalize', :path => '../node_modules/react-native-localize'
+
+  pod 'react-native-async-storage', :path => '../node_modules/@react-native-community/async-storage'
+
+  pod 'react-native-fast-image', :path => '../node_modules/react-native-fast-image'
+
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+  pod 'FreshchatSDK', :path=> '../node_modules/react-native-freshchat-sdk/ios/FreshchatSDK.podspec'
+
+  pod 'react-native-netinfo', :path => '../node_modules/@react-native-community/netinfo'
+
+  pod 'Flurry-iOS-SDK/FlurrySDK'
+  pod 'Firebase/Core', '~> 5.20.1'
+  pod 'Firebase/Messaging', '~> 5.20.1'
+  pod 'RNSound', :path => '../node_modules/react-native-sound'
+
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        if target.name == "react-native-google-maps"
+            target.build_configurations.each do |config|
+                config.build_settings['CLANG_ENABLE_MODULES'] = 'No'
+            end
+        end
+        
+        if target.name == "React"
+            target.remove_from_project
+        end
+    end
+end
+
